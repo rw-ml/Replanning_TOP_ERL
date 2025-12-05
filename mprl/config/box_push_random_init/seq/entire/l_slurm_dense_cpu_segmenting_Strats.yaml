@@ -6,7 +6,8 @@ num_parallel_jobs: 120
 ntasks: 1
 cpus-per-task: 152
 time: 4000 #600 for 10 hours
-scheduler: horeka
+scheduler: cpu_distribute
+cpus_per_rep: 38
 
 
 experiment_copy_src:
@@ -18,9 +19,9 @@ import_path: "./shared_dense_segmenting_vars.yaml"
 import_exp: "box_random_seq_entire"
 
 # cw2 config
-repetitions: 2      # Number of repetitions, each with different random seed, 2 [for hyper paremtertuning 2] or 4 for test, 20 for paper
+repetitions: 4      # Number of repetitions, each with different random seed, 2 [for hyper paremtertuning 2] or 4 for test, 20 for paper
 reps_per_job: 4     # job id assigment
-reps_in_parallel: 1 #jobs run in parallel = # of gpus used
+reps_in_parallel: 4 #jobs run in parallel = # of gpus used
 iterations: &iterations 35000
 num_checkpoints: 1
 
