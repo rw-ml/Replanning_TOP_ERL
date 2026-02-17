@@ -1,4 +1,7 @@
-# TOP-ERL: Transformer-based Off-policy Episodic RL (ICLR25 Spotlight)
+# Replanning TOP-ERL (TOP-ERL: Transformer-based Off-policy Episodic RL (ICLR25 Spotlight))
+
+This repository contains the experimental code for my Master's thesis.
+Focus: replanning in off-policy episodic reinforcement learning.
 
 <p align="center">
   <img src='./web_assets/Metaworld.gif' width="200" />
